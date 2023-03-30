@@ -24,15 +24,12 @@ namespace Develop04 {
         public void displayPrompt(string prompt) {
             Console.WriteLine("List as many responses you can to the following prompt:");
             Console.WriteLine("--- " + prompt + " ---\n");
-            Console.Write("You may begin in: ");
-            for (int i = 5; i > 0; i--) {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            Console.Write("You may begin in:  ");
+            displayCountdown(5);
         }
 
         public void receiveInput(int duration) {
+            Console.WriteLine();
             int count = 0;
             DateTime startTime = DateTime.Now;
             DateTime endTime = startTime.AddSeconds(duration);

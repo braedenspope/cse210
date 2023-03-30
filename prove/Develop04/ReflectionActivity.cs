@@ -26,12 +26,8 @@ namespace Develop04 {
             Console.WriteLine("When you have something in mind, press enter to continue.");
             Console.ReadLine();
             Console.WriteLine("Now ponder on the following questions as they related to this experience.");
-            Console.Write("You may begin in: ");
-            for (int i = 5; i > 0; i--) {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            Console.Write("You may begin in:  ");
+            displayCountdown(5);
         }
 
         public void displayQuestions(int duration) {

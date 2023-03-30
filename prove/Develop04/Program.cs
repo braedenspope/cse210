@@ -7,6 +7,7 @@ namespace Develop04 {
         {
             int choice = 0;
             while (choice == 0) {
+                Console.Clear();
                 Console.WriteLine("Menu Options:");
                 Console.WriteLine("\t1. Start breathing activity");
                 Console.WriteLine("\t2. Start reflecting activity");
@@ -26,14 +27,14 @@ namespace Develop04 {
                     Console.Clear();
                 } else if (choice == 2) {
                     Console.Clear();
-                    ListingActivity activity = new ListingActivity();
-                    activity.listingActivity();
+                    ReflectionActivity activity = new ReflectionActivity();
+                    activity.reflectionActivity();
                     choice = 0;
                     Console.Clear();
                 } else if (choice == 3) {
                     Console.Clear();
-                    ReflectionActivity activity = new ReflectionActivity();
-                    activity.reflectionActivity();
+                    ListingActivity activity = new ListingActivity();
+                    activity.listingActivity();
                     choice = 0;
                     Console.Clear();
                 } 

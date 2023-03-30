@@ -32,22 +32,12 @@ namespace Develop04 {
 
         public void breatheIn() {
             Console.WriteLine("Breathe in...");
-            for (int i = 3; i > 0; i--) {
-                Console.Write("\b \b");
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            displayCountdown(3);
         }
 
         public void breatheOut() {
             Console.WriteLine("Breathe out...");
-            for (int i = 3; i > 0; i--) {
-                Console.Write("\b \b");
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            displayCountdown(3);
         }
     }
 }

@@ -20,6 +20,14 @@ namespace Develop04 {
             return duration;
         }
 
+        public void displayCountdown(int num) {
+            for (int i = num; i > 0; i--) {
+                Console.Write("\b \b");
+                Console.Write(i);
+                Thread.Sleep(1000);
+            }
+        }
+
         public void displayAnimation() {
             List<string> animation = new List<string>();
             animation.Add("|");
