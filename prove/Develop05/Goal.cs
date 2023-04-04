@@ -37,7 +37,9 @@ namespace Develop05 {
         }
 
         public virtual string getFileString() {
-            return this.GetType() + "," + name  + "," + description + "," + value;
+            string type = this.GetType().ToString();
+            type = type.Split(".")[1];
+            return type + "," + name  + "," + description + "," + value;
         }
     }
 }
