@@ -6,7 +6,7 @@ namespace FinalProject {
             this.name = name;
             base.initialize();
             this.armorClass = 8 + this.dexterity / 3;
-            this.baseDamage = 3;
+            this.baseDamage = 2 + dexterity;
         }
 
         public Assassin(string name, string race, string strength, string dexterity, string constitution, string intelligence, string wisdom, string charisma, string health) {

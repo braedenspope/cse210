@@ -6,7 +6,7 @@ namespace FinalProject {
             this.name = name;
             base.initialize();
             this.armorClass = 12 + this.dexterity / 3;
-            this.baseDamage = 1;
+            this.baseDamage = wisdom;
         }
 
         public Guardian(string name, string race, string strength, string dexterity, string constitution, string intelligence, string wisdom, string charisma, string health) {
